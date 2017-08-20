@@ -1,5 +1,6 @@
 # nativescript-html2pdf
 Allows easy conversion from HTML to PDF files.
+Currently, only Android is supported.
 
 ## Installation
 ```
