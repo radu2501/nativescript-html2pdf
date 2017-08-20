@@ -12,6 +12,10 @@
     "pdf",
     "convert"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radu2501/nativescript-html2pdf"
+  },
   "author": "Radu Nicoara",
   "license": "ISC",
   "nativescript": {
