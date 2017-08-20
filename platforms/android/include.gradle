@@ -1,0 +1,11 @@
+android {
+    productFlavors {
+        "nativescript-html2pdf" {
+            dimension "nativescript-html2pdf"
+        }
+    }
+}
+dependencies {
+    compile group: 'com.itextpdf', name: 'itextpdf', version: '5.5.12'
+    compile group: 'com.itextpdf.tool', name: 'xmlworker', version: '5.5.10'
+}

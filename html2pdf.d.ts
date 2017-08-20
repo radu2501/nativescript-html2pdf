@@ -1,0 +1,1 @@
+export function html2PdfFile(html: string, output: string): void;

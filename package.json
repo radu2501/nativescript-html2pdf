@@ -1,0 +1,16 @@
+{
+  "name": "nativescript-html2pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "html2pdf",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Radu Nicoara",
+  "license": "ISC",
+  "nativescript": {
+    "platforms": {
+      "android": "2.3.0"
+    }
+  }
+}
