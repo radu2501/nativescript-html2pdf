@@ -1,7 +1,7 @@
 {
   "name": "nativescript-html2pdf",
   "version": "1.0.0",
-  "description": "",
+  "description": "Allows easy conversion from HTML to PDF files.",
   "main": "html2pdf",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
