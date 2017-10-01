@@ -1,6 +1,6 @@
 {
   "name": "nativescript-html2pdf",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Allows easy conversion from HTML to PDF files.",
   "main": "html2pdf",
   "scripts": {

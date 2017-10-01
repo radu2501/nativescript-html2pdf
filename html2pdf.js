@@ -1,31 +1,38 @@
-var PdfWriter = com.itextpdf.text.pdf.PdfWriter;
+/*var PdfWriter = com.itextpdf.text.pdf.PdfWriter;
 var XMLWorkerHelper = com.itextpdf.tool.xml.XMLWorkerHelper;
+var Chunk = com.itextpdf.text.Chunk;*/
+var jHtmlConvert = ro.nicoara.radu.html2pdf.HtmlToPdf.html2PdfFile;
 var application;
 
 exports.html2PdfFile = function(html, output) {
     application = require('application').android.context;
-
-    var javaStr = new java.lang.String(html);
+    jHtmlConvert(html, output);
+    /*var javaStr = new java.lang.String(html);
 
     var doc = new PDFDocument();
-
+    
     var inStr = new java.io.ByteArrayInputStream(javaStr.getBytes());
     var file = new java.io.File(output);
 
-    file.createNewFile();
+    try {
+       file.createNewFile(); 
+    } catch(e) { }
+    
 
     var pdf = PdfWriter.getInstance(doc, new java.io.FileOutputStream(file));
 
     doc.doOpen();
-
+    doc.newPage();
+    doc.add(new Chunk(''));
+    
     XMLWorkerHelper.getInstance().parseXHtml(pdf, doc, inStr);
 
     doc.doClose();
-    inStr.close();
+    inStr.close();*/
     broadcastFileScan(output);
 }
 
-var PDFDocument =  com.itextpdf.text.Document.extend({
+/*var PDFDocument =  com.itextpdf.text.Document.extend({
 
     getSuper() {
         return this.super;
@@ -58,7 +65,7 @@ var PDFDocument =  com.itextpdf.text.Document.extend({
     isOpen: function() {
         return this.super.isOpen();
     }
-});
+});*/
 
 function broadcastFileScan(filePath) {
     var scanIntent = new android.content.Intent(android.content.Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
